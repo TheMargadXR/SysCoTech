@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <div className='block gap-40'>
+    <h1>checkout</h1>
       <Navbar />
       <Hero />
       <Card />
