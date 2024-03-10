@@ -8,14 +8,14 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="block gap-40">
+    <>
       <Navbar />
       <Hero />
       <Card />
       <Extra />
       <Products />
       <Footer />
-    </div>
+    </>
   );
 }
 

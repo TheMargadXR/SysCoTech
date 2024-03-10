@@ -1,40 +1,17 @@
 import React from "react";
-import Img1 from "/Users/bokhbatamartuvshin/StarBucks/src/images/img1.png";
-import Img2 from "/Users/bokhbatamartuvshin/StarBucks/src/images/img2.png";
-import Img3 from "/Users/bokhbatamartuvshin/StarBucks/src/images/img3.png";
-import Img4 from "/Users/bokhbatamartuvshin/StarBucks/src/images/img4.png";
+import Img1 from "../images/img1.png";
+import Img2 from "../images/img2.png";
+import Img3 from "../images/img3.png";
+import Img4 from "../images/img4.png";
+import cardData from "../Data/Card.json";
 import { FaStar } from "react-icons/fa6";
 
-const CardData = [
-  {
-    id: 1,
-    img: Img1,
-    title: "MINI CONSOLE",
-    exp: "Ideal for everyday shortcuts. Adaptable to any workflow",
-    cost: "$249",
-  },
-  {
-    id: 2,
-    img: Img4,
-    title: "AUDIO CONSOLE",
-    exp: "Ideal for music & audio. Adaptable to any workflow",
-    cost: "$449",
-  },
-  {
-    id: 3,
-    img: Img3,
-    title: "PHOTO CONSOLE",
-    exp: "Ideal for Photo & Video. Adaptable to any workflow",
-    cost: "$599",
-  },
-  {
-    id: 4,
-    img: Img2,
-    title: "VIDEO CONSOLE",
-    exp: "Ideal for Video & Film. Adaptable to any workflow",
-    cost: "$899",
-  },
-];
+const images = {
+  Img1,
+  Img2,
+  Img3,
+  Img4,
+};
 
 const Card = () => {
   return (
@@ -44,11 +21,14 @@ const Card = () => {
         <div className="">
           <div className="grid grid-cols-2 gap-10">
             {/* card section */}
-            {CardData.map((data) => (
-              <div key={data.id} className="flex justify-center items-center hover:scale-105 duration-300">
+            {cardData.map((data) => (
+              <div
+                key={data.id}
+                className="flex justify-center items-center hover:scale-105 duration-300"
+              >
                 <div className="card text-sm md:text-base lg:text-lg xl:text-xl">
                   <img
-                    src={data.img}
+                    src={images[data.img]}
                     alt=""
                     className="h-full w-full object-cover rounded-md"
                   />
