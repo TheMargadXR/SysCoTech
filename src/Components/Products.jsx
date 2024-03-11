@@ -25,29 +25,25 @@ const images = {
 };
 const Products = () => {
   return (
-    <div className="flex justify-center items-center h-screen mt-12 md:mt-6">
-      <div className="container mx-[12%] mt-[64%]">
-        <div className="mt-[10%]">
-          <div className="grid grid-cols-3 gap-10">
-            {CardData.map((data) => (
-              <div key={data.id} className="flex justify-center items-center">
-                <div className="hover:scale-105 duration-300 text-sm md:text-base lg:text-lg xl:text-xl">
-                  <img
-                    src={images[data.img]}
-                    alt=""
-                    className="h-full w-full object-cover rounded-md"
-                  />
-                  <div>
-                    <div className="flex justify-between items-center">
-                      <h1 className="font-semibold">{data.title}</h1>
-                      <p className="text-base">{data.cost}</p>
-                    </div>
-                    <p className="text-sm">{data.exp}</p>
+    <div className="flex justify-center items-center">
+      <div className="mt-[10%]">
+        <div className="grid grid-cols-3 gap-5">
+          {CardData.map((data) => (
+            <div
+              key={data.id}
+              className="flex justify-center items-center h-4/6 w-4/6"
+            >
+              <div className=" duration-300 text-sm md:text-base lg:text-lg xl:text-xl">
+                <img src={images[data.img]} alt="" className="h-full w-full" />
+                <div>
+                  <div className="flex justify-between items-center text-[#1a2456]">
+                    <h1 className="font-semibold">{data.title}</h1>
+                    <p className="text-base ">{data.cost}</p>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

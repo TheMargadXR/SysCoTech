@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" mt-[74%] bg-[#1a2456] text-[#ff8b68]">
+    <div className=" mt-[5%] bg-[#1a2456] text-[#efc2b3]">
       <div className="container mx-auto py-16 grid gap-8 text-[14px] text-black-300">
         <div className=" mx-auto mb-8 lg:mb-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <div className="">
@@ -19,7 +19,7 @@ const Footer = () => {
               <p className="hover:underline">Suite 502</p>
               <p className="hover:underline">Kitchener, ON</p>
               <p className="hover:underline">Canada</p>
-            </div>    
+            </div>
           </div>
           <div>
             <h1 className="mb-2 font-bold">QUICK LINKS</h1>
@@ -51,7 +51,10 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-auto">
             <h1 className="mb-2 flex font-bold">SUBSCRIBE TO MONOGRAM</h1>
-            <p>Master productivity with Creative Console and get all the latest Monogram news.</p>
+            <p>
+              Master productivity with Creative Console and get all the latest
+              Monogram news.
+            </p>
             <div className="flex my-4">
               <input
                 placeholder="Email address"

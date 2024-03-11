@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Img1 from "../images/img1.png";
 import Img2 from "../images/img2.png";
 import Img3 from "../images/img3.png";
@@ -14,6 +14,8 @@ const images = {
 };
 
 const Card = () => {
+  const [hoveredImg, setHoveredImg] = useState(null);
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="container mx-[12%] md:mt-[6%]">
@@ -24,13 +26,17 @@ const Card = () => {
             {cardData.map((data) => (
               <div
                 key={data.id}
-                className="flex justify-center items-center hover:scale-105 duration-300"
+                className="flex justify-center items-center  duration-300"
               >
-                <div className="card text-sm md:text-base lg:text-lg xl:text-xl">
+                <div
+                  className="card text-sm md:text-base lg:text-lg xl:text-xl"
+                  onMouseEnter={() => setHoveredImg(data.img)}
+                  onMouseLeave={() => setHoveredImg(null)}
+                >
                   <img
-                    src={images[data.img]}
+                    src={hoveredImg ? images[hoveredImg] : images[data.img]}
                     alt=""
-                    className="h-full w-full object-cover rounded-md"
+                    className="h-full w-full object-cover"
                   />
                   <div>
                     <div className="flex justify-between items-center">

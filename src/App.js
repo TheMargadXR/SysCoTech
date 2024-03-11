@@ -8,14 +8,14 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#f0efed]">
       <Navbar />
       <Hero />
       <Card />
       <Extra />
       <Products />
       <Footer />
-    </>
+    </div>
   );
 }
 
