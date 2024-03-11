@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { IoBagOutline } from "react-icons/io5";
 import { MdArrowDropDown } from "react-icons/md";
-import { PiRectangleThin } from "react-icons/pi";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,6 +13,7 @@ const Navbar = () => {
     <div className="sticky top-4 z-40 ">
       <div className="flex justify-between cursor-pointer items-center max-w-full m-4 px-4 h-10 text-[#efc2b3] bg-[#1a2456] py-6 ">
         <div className="flex items-center">
+          <Link to="/">
           <div>
             <svg
               height="38"
@@ -20,7 +21,7 @@ const Navbar = () => {
               fill="currentColor"
               className="hover:text-[#fe7a52] duration-100"
             >
-              <title>Monogram</title>
+              <title> Monogram</title>
               <path d="M150,36V0H0V114H150ZM144,6V36H78V6ZM6,6H72V72H6ZM72,108H6V78H72Zm72,0H78V78h0V42h66Z"></path>
               <rect x="35.5" y="17" width="6" height="44"></rect>
               <rect x="53" y="17" width="6" height="44"></rect>
@@ -36,14 +37,15 @@ const Navbar = () => {
               <path d="M404.4,57.222a9.5,9.5,0,0,0,1.649-5.623,9.138,9.138,0,0,0-2.779-7.193,11.069,11.069,0,0,0-7.683-2.448H383.069V71.636h6.225v-10.5h4.883l5.554,10.5h6.483l-5.959-11.25A9.062,9.062,0,0,0,404.4,57.222Zm-4.579-5.62a3.694,3.694,0,0,1-1.351,3.125,6.154,6.154,0,0,1-3.8,1.1h-.024l-5.345,0V47.266h5.345C398.172,47.266,399.817,48.633,399.818,51.6Z"></path>
             </svg>
           </div>
+          </Link>
         </div>
         <ul className="hidden md:flex cursor-pointer items-center text-xs">
           <li className="hover:text-[#fe7a52]  duration-100 p-4">
             HOW IT WORKS
           </li>
           <li className="p-5 hover:text-[#f0efed] duration-100">WORKFLOWS</li>
-          <li className="p-5 hover:text-[#fe7a52] duration-100">DOWNLOAD</li>
-          <li className="p-5 hover:text-[#fe7a52] duration-100">BLOG</li>
+          <li className="p-5 hover:text-[#fe7a52] duration-100"><Link to="/download">DOWNLOAD</Link></li>
+          <li className="p-5 hover:text-[#fe7a52] duration-100"><Link to="/blog">BLOG</Link></li>
           <li className="p-5 hover:text-[#fe7a52] duration-100">SUPPORT</li>
           <li className="p-5 hover:text-[#fe7a52] duration-100">SHOP</li>
           <li className="mr-[-12px]">
@@ -134,10 +136,11 @@ const Navbar = () => {
               MINI CONSOLE
             </li>
             <li className="p-4 border-b hover:text-[#fe7a52] duration-100 border-[#4052ac]">
-              DOWNLOAD
+            <Link to="/download">DOWNLOAD</Link>
             </li>
             <li className="p-4 border-b hover:text-[#fe7a52] duration-100 border-[#4052ac]">
-              BLOG
+              <Link to="/blog">BLOG</Link>
+              
             </li>
             <li className="p-4 border-b hover:text-[#fe7a52] duration-100 border-[#4052ac]">
               SUPPPORT

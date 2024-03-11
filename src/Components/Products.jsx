@@ -28,7 +28,7 @@ const Products = () => {
     <div className="">
           <div className="ml-[24%] md:ml-[14%] lg:ml-[12%] flex items-center justify-center">
       <div className="mt-[16%] md:mt-[10%] lg:mt-[10%]  text-sm md:text-base lg:text-lg xl:text-xl">
-        <div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {CardData.map((data) => (
             <div
               key={data.id}
