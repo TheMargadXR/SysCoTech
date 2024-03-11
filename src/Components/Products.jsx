@@ -25,14 +25,14 @@ const images = {
 };
 const Products = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="mt-[10%]">
-        <div className="grid grid-cols-3 gap-5">
+    <div className="">
+          <div className="ml-[24%] md:ml-[14%] lg:ml-[12%] flex items-center justify-center">
+      <div className="mt-[16%] md:mt-[10%] lg:mt-[10%]  text-sm md:text-base lg:text-lg xl:text-xl">
+        <div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {CardData.map((data) => (
             <div
               key={data.id}
-              className="flex justify-center items-center h-4/6 w-4/6"
-            >
+              className="flex justify-center items-center h-4/6 w-4/6"> 
               <div className=" duration-300 text-sm md:text-base lg:text-lg xl:text-xl">
                 <img src={images[data.img]} alt="" className="h-full w-full" />
                 <div>
@@ -46,6 +46,7 @@ const Products = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
