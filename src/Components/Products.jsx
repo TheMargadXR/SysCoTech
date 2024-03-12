@@ -26,27 +26,29 @@ const images = {
 
 const Products = () => {
   return (
-    <div className="flex justify-center items-center py-10 h-full text-[#1a2456]">
-      <div className="container mx-[4%] sm:mx-[12%] md:mt-[6%]">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
-          {cardData.map((data) => (
-            <div
-              key={data.id}
-              className="flex justify-center items-center p-5 duration-300"
-            >
-              <div className="card text-sm md:text-base lg:text-lg xl:text-xl">
-                <img
-                  src={images[data.img]}
-                  alt=""
-                  className="h-4/6 w-full sm:h-5/6 sm:w-5/6 object-cover mb-4"
-                />
-                <div className="flex justify-between items-center">
-                  <h1 className="font-semibold">{data.title}</h1>
-                  <p className="text-base">{data.cost}</p>
+    <div className="">
+      <div className="ml-[24%] md:ml-[14%] lg:ml-[12%] flex items-center justify-center">
+        <div className="mt-[16%] md:mt-[10%] lg:mt-[10%]  text-sm md:text-base lg:text-lg xl:text-xl">
+          <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            {CardData.map((data) => (
+              <div
+                key={data.id}
+                className="flex justify-center items-center p-5 duration-300"
+              >
+                <div className="card text-sm md:text-base lg:text-lg xl:text-xl">
+                  <img
+                    src={images[data.img]}
+                    alt=""
+                    className="h-4/6 w-full sm:h-5/6 sm:w-5/6 object-cover mb-4"
+                  />
+                  <div className="flex justify-between items-center">
+                    <h1 className="font-semibold">{data.title}</h1>
+                    <p className="text-base">{data.cost}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

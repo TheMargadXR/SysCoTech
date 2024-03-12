@@ -6,6 +6,7 @@ import Extra from "./Components/Extra";
 import Products from "./Components/Products";
 import Footer from "./Components/Footer";
 
+
 function App() {
   return (
     <div className="bg-[#f0efed]">
