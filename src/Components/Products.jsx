@@ -9,7 +9,7 @@ import Img7 from "../images/co7.png";
 import Img8 from "../images/co8.png";
 import Img9 from "../images/co9.png";
 import Img10 from "../images/co10.png";
-import cardData from "../Data/Products.json";
+import CardData from "../Data/Products.json";
 
 const images = {
   Img1,
