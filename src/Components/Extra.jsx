@@ -3,7 +3,7 @@ import bg from "../images/bg1.png";
 
 const Extra = () => {
   return (
-    <div className=" flex w-full lg:mt-[6%] md:mt-[2%] sm:mt-[1px]">
+    <div className=" flex w-full h-full">
       <img src={bg} alt="/" />
     </div>
   );

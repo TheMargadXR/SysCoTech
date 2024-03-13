@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Download from './pages/Download';
-import Blog from './pages/Blog';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import Download from "./Routes/Download";
+import Blog from "./Routes/Blog";
+import Registration from "./Routes/Registeration";
+import Shop from "./Routes/Shop";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,21 +16,27 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Shop />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
   },
   {
     path: "/download",
-    element: <Download />
+    element: <Download />,
   },
   {
     path: "/blog",
-    element: <Blog />
+    element: <Blog />,
   },
-
+  {
+    path: "/registration",
+    element: <Registration />,
+  },
 ]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RouterProvider router={router}>
     <App />

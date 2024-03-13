@@ -5,7 +5,8 @@ import Card from "./Components/Card";
 import Extra from "./Components/Extra";
 import Products from "./Components/Products";
 import Footer from "./Components/Footer";
-
+import Blog from "./Routes/Blog";
+import Registration from "./Routes/Registeration";
 
 function App() {
   return (

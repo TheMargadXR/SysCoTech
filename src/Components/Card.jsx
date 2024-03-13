@@ -15,7 +15,7 @@ const images = {
 const Card = () => {
   return (
     <div className="flex justify-center items-center h-full text-[#1a2456]">
-      <div className="container mx-[4%] sm:mx-[12%] md:mt-[6%]">
+      <div className=" mx-[4%] sm:mx-[12%] md:mt-[6%]">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
           {cardData.map((data) => (
             <div
