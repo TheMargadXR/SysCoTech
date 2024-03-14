@@ -1,4 +1,6 @@
 import React from "react";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import bg from "../images/blog,img.png";
@@ -21,7 +23,7 @@ const images = {
 
 const Blog = () => {
   return (
-    <div className="">
+    <div className="bg-[#f0efed]">
       <Navbar />
       <div>
         <div className="mt-[-80px]  relative flex items-center justify-center h-[500px] w-full">
@@ -59,27 +61,47 @@ const Blog = () => {
               </ul>
             </div>
           </div>
-
-          <div className="container mx-auto md:mx-[120px] p-8 mt-6">
+          <div className="container mx-auto md:mx-[120px] p-18 md:p-36 mt-6">
             <div className="grid grid-cols-1  gap-40">
               {cardsData.map((card) => (
-                <div key={card.id} className="grid grid-cols-1 md:grid-cols-2 ">
-                  <img
-                    src={images[card.img]}
-                    alt={`Card ${card.id}`}
-                    className="w-[570px] h-[440px] object-cover mb-4 border-2"
-                  />
-                  <div className="text-[#1a2456] ml-4 mr-[60px]">
-                    <h1 className="text-[#1a2456] text-[1.75rem] font-semibold ">
-                      {card.title}
-                    </h1>
-                    <h3 className="font-semibold">{card.text}</h3>
-                    <p className="text-[1rem] font-light">{card.para}</p>
-                    <h1 className="text-[#1a2456] text-[1.75rem] font-semibold">
-                      {card.title1}
-                    </h1>
-                    <h3 className="font-semibold">{card.text1}</h3>
-                    <p className="text-[1rem] font-light">{card.para1}</p>
+                <div className="">
+                  <h2 className="text-4xl text-[#1a2456] font-bold px-5">
+                    {card.tag}
+                  </h2>
+                  <div
+                    key={card.id}
+                    className="grid grid-cols-1 md:grid-cols-2 "
+                  >
+                    <img
+                      src={images[card.img]}
+                      alt={`Card ${card.id}`}
+                      className="w-[570px] h-[440px] object-cover mb-4 p-4"
+                    />
+                    <div className="text-[#1a2456] ml-4 mr-[60px]">
+                      <div className="flex">
+                        <h1 className="text-[#1a2456] text-[1.75rem] font-semibold ">
+                          {card.title}
+                        </h1>
+                        <IoArrowForwardCircleOutline size={60} />
+                      </div>
+
+                      <h3 className="font-semibold">{card.text}</h3>
+                      <p className="text-[1rem] font-light">{card.para}</p>
+                      <div className="flex">
+                        <h1 className="text-[#1a2456] text-[1.75rem] font-semibold">
+                          {card.title1}
+                        </h1>
+                        <IoArrowForwardCircleOutline size={100} />
+                      </div>
+
+                      <h3 className="font-semibold">{card.text1}</h3>
+                      <p className="text-[1rem] font-light">{card.para1}</p>
+                      <div className="flex">
+                        <span className="font-bold text-xl">SEE ALL</span>
+                        <br />
+                        <IoArrowForwardCircleOutline size={28} />
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}

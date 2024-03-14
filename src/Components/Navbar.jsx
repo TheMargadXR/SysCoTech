@@ -9,6 +9,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
     <div className="sticky top-4 z-40 ">
       <div className="flex justify-between cursor-pointer items-center max-w-full m-4 px-4 h-10 text-[#efc2b3] bg-[#1a2456] py-6 ">
@@ -44,6 +45,7 @@ const Navbar = () => {
             HOW IT WORKS
           </li>
           <li className="p-5 hover:text-[#f0efed] duration-100">WORKFLOWS</li>
+          <div className="block md:hidden"></div>
           <li className="p-5 hover:text-[#fe7a52] duration-100">
             <Link to="/download">DOWNLOAD</Link>
           </li>
@@ -122,7 +124,6 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-
             <li className="p-4 border-b border-[#4052ac]">HOW IT WORKS</li>
             <li className="p-4 border-b hover:text-[#f0efed] duration-100 border-[#4052ac]">
               WORKFLOWS

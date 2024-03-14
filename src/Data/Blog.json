@@ -2,6 +2,7 @@
   {
     "id": 1,
     "img": "blog1",
+    "tag": "PHOTO",
     "title": "CELEBRATING A DECADE OF MONOGRAM",
     "text": "1 MIN READ",
     "para": "A look into Monogram's journey over the years",
@@ -12,6 +13,7 @@
   {
     "id": 2,
     "img": "blog2",
+    "tag": "VIDEO",
     "title": "CELEBRATING A DECADE OF MONOGRAM",
     "text": "1 MIN READ",
     "para": "A look into Monogram's journey over the years",
@@ -22,6 +24,7 @@
   {
     "id": 3,
     "img": "blog3",
+    "tag": "MONOGRAM",
     "title": "CELEBRATING A DECADE OF MONOGRAM",
     "text": "1 MIN READ",
     "para": "A look into Monogram's journey over the years",
@@ -32,6 +35,7 @@
   {
     "id": 4,
     "img": "blog4",
+    "tag": "AUDIO",
     "title": "CELEBRATING A DECADE OF MONOGRAM",
     "text": "1 MIN READ",
     "para": "A look into Monogram's journey over the years",
@@ -42,6 +46,7 @@
   {
     "id": 5,
     "img": "blog5",
+    "tag": "PHOTO",
     "title": "CELEBRATING A DECADE OF MONOGRAM",
     "text": "1 MIN READ",
     "para": "A look into Monogram's journey over the years",
