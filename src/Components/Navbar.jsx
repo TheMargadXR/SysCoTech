@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-4 z-40 ">
-      <div className="flex justify-between cursor-pointer items-center max-w-full m-4 px-4 h-10 text-[#efc2b3] bg-[#1a2456] py-6 ">
+    <div className="sticky top-4 z-40 font-light">
+      <div className="flex justify-between cursor-pointer items-center max-w-full m-4 px-2 h-12 text-[#efc2b3] bg-[#1a2456] py-6 ">
         <div className="flex items-center">
           <Link to="/">
             <div>

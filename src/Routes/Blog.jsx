@@ -9,7 +9,6 @@ import blog2 from "../images/blog2.webp";
 import blog3 from "../images/blog3.png";
 import blog4 from "../images/blog3.png";
 import blog5 from "../images/blog4.png";
-import { MdBrightness1 } from "react-icons/md";
 import cardsData from "../Data/Blog.json";
 import menuData from "../Data/menu.json";
 
@@ -50,7 +49,7 @@ const Blog = () => {
         <div className="mx-auto justify-center">
           <div className="border-t-2 border-b-2 border-black mt-6">
             <div className="">
-              <ul className="flex gap-4 justify-center p-4 ">
+              <ul className="flex gap-4 justify-center p-2 ">
                 {menuData.map((menus) => (
                   <div className="border-r-2 border-black pb-2 flex">
                     <li className="mr-4 hover:text-black  hover:underline duration-100 ">
